@@ -16,28 +16,28 @@ addButton.addEventListener ('click',() => {
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
     const sum = addValue1 + addValue2;
-    addResults.textContent = sum;
+    addResults.textContent = "You added for " + sum;
     console.log(sum)
 } )
 subtractButton.addEventListener ('click',() => {
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
     const subVal = addValue1 - addValue2;
-    addResults.textContent = subVal;
+    addResults.textContent = "You subtracted for " + subVal;
     console.log(subVal)
 } )
 multiplyButton.addEventListener ('click',() => {
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
     const mulVal = addValue1 * addValue2;
-    addResults.textContent = mulVal;
+    addResults.textContent = "You multiplied for " + mulVal;
     console.log(mulVal)
 } )
 divideButton.addEventListener ('click',() => {
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
     const divVal = addValue1 / addValue2;
-    addResults.textContent = divVal;
+    addResults.textContent = "You divided for " + Math.round ((divVal + Number.EPSILON) * 100) /100;
     console.log(divVal)
 } )
 
