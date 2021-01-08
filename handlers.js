@@ -1,7 +1,5 @@
-import {getSum} from './utils.js';
-import {difference} from './utils.js';
-import {multiply} from './utils.js';
-import {divide} from './utils.js';
+import {getSum,divide,multiply,difference } from './utils.js';
+
 
 const addInput1 = document.getElementById("add-input")
 const addInput2 = document.getElementById("add-input2")
