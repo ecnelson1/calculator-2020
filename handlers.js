@@ -8,7 +8,7 @@ const addResults = document.getElementById ('add-results');
 export function addButtonClick(){
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
-    const sum = getSum(addValue1,addValue2);
+    const sum = getSum(addValue1, addValue2);
     addResults.textContent = 'You added for ' + sum;
 }
 export function SubButtonClick(){
@@ -20,12 +20,12 @@ export function SubButtonClick(){
 export function MulButtonClick(){
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
-    const mulVal = multiply(addValue1, addValue2)
+    const mulVal = multiply(addValue1, addValue2);
     addResults.textContent = 'You multiplied for ' + mulVal;
 } 
 export function DivButtonClick(){
     const addValue1 = addInput1.valueAsNumber;
     const addValue2 = addInput2.valueAsNumber;
     const divVal = divide(addValue1, addValue2);
-    addResults.textContent = 'You divided for ' + Math.round ((divVal + Number.EPSILON) * 100) /100;  
+    addResults.textContent = 'You divided for ' + Math.round ((divVal + Number.EPSILON) * 100) / 100;  
 } 
